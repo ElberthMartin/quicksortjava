@@ -45,9 +45,9 @@ public static void quickSort(int[] array, int low, int high) {
 }
 public static int partition(int[] array, int low, int high) {
     
-    // Aquí seleccionamos el pivote como el elemento en la posición "high".
+    // Aquí seleccionamos el pivote como el elemento en la posición high.
     int pivot = array[high]; 
-    // Inicializamos  el índice "i" para los elementos menores que el pivote.
+    // Inicializamos  el índice i para los elementos menores que el pivote.
     int i = low - 1; 
     
     // Iterar a través del subarreglo
@@ -61,16 +61,23 @@ public static int partition(int[] array, int low, int high) {
             swap(array, i, j); 
         }
         }
-     // Intercambiamos el pivote con el elemento en la posición "i + 1".
+     // Intercambiamos el pivote con el elemento en la posición i + 1.
         swap(array, i + 1, high);
         // retornamos la posición del pivote después de la partición.
         return i + 1;
     }
-
- 
+ public static void swap(int[] array, int i, int j) {
+      // Almacenar el valor del elemento en la posición i
+        int temp = array[i];
+// Colocamos el valor del elemento en la posición j en la posición i
+        array[i] = array[j];
+// Coloca el valor almacenado en -temp- en la posición j
+        array[j] = temp;
+    
+ }
 }
 
-    
+}
 
   
     
