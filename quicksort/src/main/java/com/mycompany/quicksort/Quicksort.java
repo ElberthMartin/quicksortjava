@@ -27,6 +27,8 @@ public static void main(String[] args) {
     quickSort(array, 0, array.length - 1);
     //en seguida creamos la representacion del array ordenado
     StringBuilder sortedArray = new StringBuilder("Array ordenado: ");
+    //StringBuilder es una clase que proporciona una forma eficiente 
+    //de construir y manipular cadenas de caracteres (strings) en memoria 
     for (int num : array) {
         sortedArray.append(num).append(" ");
     }
@@ -37,6 +39,8 @@ public static void main(String[] args) {
 public static void quickSort(int[] array, int low, int high) {
     if (low < high) {
         // Encontramos el índice del pivote
+        //formar parte de un algoritmo de ordenamiento,
+        //probablemente el algoritmo QuickSort
         int pivotIndex = partition(array, low, high);
         // Ordenamos recursivamente las dos mitades antes y después del pivote
         quickSort(array, low, pivotIndex - 1);
