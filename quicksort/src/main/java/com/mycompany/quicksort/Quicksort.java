@@ -33,5 +33,15 @@ public static void main(String[] args) {
         // Mostramos el array ordenado en una ventana emergente
     JOptionPane.showMessageDialog(null, sortedArray.toString());
 }
+//funcion quickSort
+public static void quickSort(int[] array, int low, int high) {
+    if (low < high) {
+        // Encontramos el índice del pivote
+        int pivotIndex = partition(array, low, high);
+        // Ordenamos recursivamente las dos mitades antes y después del pivote
+        quickSort(array, low, pivotIndex - 1);
+        quickSort(array, pivotIndex + 1, high);
+    }
+}
 
     }
