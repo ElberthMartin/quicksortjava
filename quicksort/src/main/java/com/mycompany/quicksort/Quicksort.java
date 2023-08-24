@@ -11,7 +11,7 @@ import javax.swing.JOptionPane;
  * @author Alumno
  */
 public class Quicksort {
-
+public static void main(String[] args) {
     // Solicitamos la  entrada de números separados por comas al usuario
     String input = JOptionPane.showInputDialog("Ingrese los números separados por comas:");
     // Dividimos la entrada en un array de strings utilizando unas coma como delimitador
@@ -30,4 +30,8 @@ public class Quicksort {
     for (int num : array) {
         sortedArray.append(num).append(" ");
     }
+        // Mostramos el array ordenado en una ventana emergente
+    JOptionPane.showMessageDialog(null, sortedArray.toString());
+}
+
     }
