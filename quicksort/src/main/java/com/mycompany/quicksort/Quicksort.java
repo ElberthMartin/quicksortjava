@@ -23,4 +23,11 @@ public class Quicksort {
     for (int i = 0; i < inputArray.length; i++) {
         array[i] = Integer.parseInt(inputArray[i].trim());
     }
+    // Ordenamo el array utilizando el algoritmo quicksort
+    quickSort(array, 0, array.length - 1);
+    //en seguida creamos la representacion del array ordenado
+    StringBuilder sortedArray = new StringBuilder("Array ordenado: ");
+    for (int num : array) {
+        sortedArray.append(num).append(" ");
+    }
     }
