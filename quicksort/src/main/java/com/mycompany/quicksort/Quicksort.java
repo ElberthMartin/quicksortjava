@@ -60,16 +60,18 @@ public static int partition(int[] array, int low, int high) {
             // Intercambiamos el elemento menor a la posición correcta
             swap(array, i, j); 
         }
+        }
+     // Intercambiamos el pivote con el elemento en la posición "i + 1".
+        swap(array, i + 1, high);
+        // retornamos la posición del pivote después de la partición.
+        return i + 1;
     }
+
+ 
+}
+
+    
+
+  
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    }
