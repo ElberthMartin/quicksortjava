@@ -15,6 +15,7 @@ public static void main(String[] args) {
     // Solicitamos la  entrada de números separados por comas al usuario
     String input = JOptionPane.showInputDialog("Ingrese los números separados por comas:");
     // Dividimos la entrada en un array de strings utilizando unas coma como delimitador
+    // Un array es una manera de poder guardar datos del mismo tipo o clase
     String[] inputArray = input.split(",");
   // Creamos otro array de enteros para almacenar los números
     int[] array = new int[inputArray.length];
@@ -36,10 +37,11 @@ public static void main(String[] args) {
     JOptionPane.showMessageDialog(null, sortedArray.toString());
 }
 //funcion quickSort
+//
 public static void quickSort(int[] array, int low, int high) {
     if (low < high) {
         // Encontramos el índice del pivote
-        //formar parte de un algoritmo de ordenamiento,
+        //un pivot formar parte de un algoritmo de ordenamiento,
         //probablemente el algoritmo QuickSort
         int pivotIndex = partition(array, low, high);
         // Ordenamos recursivamente las dos mitades antes y después del pivote
