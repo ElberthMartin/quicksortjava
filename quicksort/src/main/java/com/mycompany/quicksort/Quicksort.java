@@ -49,4 +49,27 @@ public static int partition(int[] array, int low, int high) {
     int pivot = array[high]; 
     // Inicializamos  el índice "i" para los elementos menores que el pivote.
     int i = low - 1; 
+    
+    // Iterar a través del subarreglo
+     for (int j = low; j < high; j++) { 
+         
+     // Comparar el elemento actual con el pivote
+        if (array[j] < pivot) { 
+// Incrementacion del "i" para hacer espacio para un nuevo elemento menor
+            i++;
+            // Intercambiamos el elemento menor a la posición correcta
+            swap(array, i, j); 
+        }
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     }
