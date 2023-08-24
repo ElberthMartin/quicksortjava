@@ -43,5 +43,10 @@ public static void quickSort(int[] array, int low, int high) {
         quickSort(array, pivotIndex + 1, high);
     }
 }
-
+public static int partition(int[] array, int low, int high) {
+    
+    // Aquí seleccionamos el pivote como el elemento en la posición "high".
+    int pivot = array[high]; 
+    // Inicializamos  el índice "i" para los elementos menores que el pivote.
+    int i = low - 1; 
     }
